@@ -30,9 +30,9 @@
 # endif
 #endif
 
-#include "curl/curl.h"
-#include "curl/easy.h"
-#include "curl/multi.h"
+#include "/root/curl-impersonate/build/curl-8.1.1/include/curl/curl.h"
+#include "/root/curl-impersonate/build/curl-8.1.1/include/curl/easy.h"
+#include "/root/curl-impersonate/build/curl-8.1.1/include/curl/multi.h"
 #undef NDEBUG
 #include <assert.h>
 
