@@ -68,6 +68,7 @@ class CURLRequest(object):
             pycurl.SSLVERSION: pycurl.SSLVERSION_TLSv1_2,
             pycurl.SSL_ENABLE_ALPS: 1,
             pycurl.SSL_CERT_COMPRESSION: "brotli",
+            pycurl.SSL_EC_CURVES: "X25519:P-256:P-384",
             pycurl.HTTP2_PSEUDO_HEADERS_ORDER: "masp",
             pycurl.SSL_ENABLE_NPN: 0,
             pycurl.VERBOSE: self._verbose,
