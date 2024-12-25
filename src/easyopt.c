@@ -212,7 +212,17 @@ do_curl_setopt_string_impl(CurlObject *self, int option, PyObject *obj)
 
     /* Check that the option specified a string as well as the input */
     switch (option) {
-    case CURLOPT_SSL_CERT_COMPRESSION:
+    case CURLOPT_SSL_EC_CURVES:    
+    case CURLOPT_HTTP_VERSION:
+    case CURLOPT_SSLVERSION:
+    case CURLOPT_SSL_ENABLE_NPN:
+    case CURLOPT_SSL_ENABLE_ALPN:
+    case CURLOPT_SSL_ENABLE_ALPS:
+    case CURLOPT_SSL_ENABLE_TICKET:
+    case CURLOPT_SSL_PERMUTE_EXTENSIONS:
+    case CURLOPT_HTTP2_NO_SERVER_PUSH:
+    case CURLOPT_ACCEPT_ENCODING:
+    case CURLOPT_SSL_CERT_COMPRESSION:   
     case CURLOPT_SSL_SIG_HASH_ALGS:
     case CURLOPT_HTTP2_PSEUDO_HEADERS_ORDER:
     case CURLOPT_CAINFO:
